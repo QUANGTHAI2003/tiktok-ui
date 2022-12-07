@@ -5,12 +5,11 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
-const Menu = ({title, onBack}) => {
-
+const Menu = ({ title, onBack }) => {
     return (
         <header className={cx('header')}>
             <button className={cx('back-btn')} onClick={onBack}>
-              <FontAwesomeIcon icon={faChevronLeft} />
+                <FontAwesomeIcon icon={faChevronLeft} />
             </button>
             <h4 className={cx('header-title')}>{title}</h4>
         </header>

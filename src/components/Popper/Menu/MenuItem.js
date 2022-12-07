@@ -6,8 +6,8 @@ const cx = classNames.bind(styles);
 
 const MenuItem = ({ data, onClick }) => {
     const classes = cx('menu-item', {
-        separate: data.separate
-    })
+        separate: data.separate,
+    });
 
     return (
         <Button

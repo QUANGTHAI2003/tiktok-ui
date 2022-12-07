@@ -1,7 +1,7 @@
-import './GloablStyles.scss'
+import './GloablStyles.scss';
 
-const GloablStyles = ({children}) => {
-    return children
+const GloablStyles = ({ children }) => {
+    return children;
 };
 
 export default GloablStyles;

@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 
-const defaultFn = () => {}
+const defaultFn = () => {};
 
 const Menu = ({ children, items = [], onChange = defaultFn }) => {
     const [history, setHistory] = useState([{ data: items }]);
@@ -27,7 +27,7 @@ const Menu = ({ children, items = [], onChange = defaultFn }) => {
                         if (isParent) {
                             setHistory([...history, item.children]);
                         } else {
-                            onChange(item)
+                            onChange(item);
                         }
                     }}
                 />
@@ -40,9 +40,14 @@ const Menu = ({ children, items = [], onChange = defaultFn }) => {
             render={(attrs) => (
                 <div {...attrs} className={cx('menu-list')} tabIndex="-1">
                     <PopperWrapper className={cx('menu-popper')}>
-                        {history.length > 1 && <Header title="Language" onBack={() => {
-                            setHistory(history.slice(0, history.length - 1));
-                        }} />}
+                        {history.length > 1 && (
+                            <Header
+                                title="Language"
+                                onBack={() => {
+                                    setHistory(history.slice(0, history.length - 1));
+                                }}
+                            />
+                        )}
                         <div>{renderItems()}</div>
                     </PopperWrapper>
                 </div>
@@ -51,7 +56,7 @@ const Menu = ({ children, items = [], onChange = defaultFn }) => {
             delay={[0, 500]}
             offset={[12, 8]}
             placement="bottom-end"
-            onHide={() => setHistory(prev => prev.slice(0, 1))}
+            onHide={() => setHistory((prev) => prev.slice(0, 1))}
         >
             {children}
         </Tippy>
