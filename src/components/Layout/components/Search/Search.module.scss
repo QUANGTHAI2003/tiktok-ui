@@ -59,6 +59,32 @@
     transform: translateY(-50%);
     color: rgba(22, 24, 35, 0.34);
     cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.loading {
+    animation: spinner 1s linear infinite;
+    -webkit-animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+        -webkit-transform: translateY(-50%) rotate(0deg);
+        -moz-transform: translateY(-50%) rotate(0deg);
+        -ms-transform: translateY(-50%) rotate(0deg);
+        -o-transform: translateY(-50%) rotate(0deg);
+}
+    to {
+        transform: translateY(-50%) rotate(360deg);
+        -webkit-transform: translateY(-50%) rotate(360deg);
+        -moz-transform: translateY(-50%) rotate(360deg);
+        -ms-transform: translateY(-50%) rotate(360deg);
+        -o-transform: translateY(-50%) rotate(360deg);
+}
 }
 
 .search-btn {
