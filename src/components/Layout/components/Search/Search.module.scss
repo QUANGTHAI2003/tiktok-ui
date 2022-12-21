@@ -22,6 +22,7 @@
         outline: none;
         background-color: transparent;
         caret-color: var(--primary);
+        font-family: var(--font-family);
 
         &:not(:placeholder-shown) ~ .search-btn {
             color: rgba(22, 24, 35, 0.75);
@@ -77,14 +78,14 @@
         -moz-transform: translateY(-50%) rotate(0deg);
         -ms-transform: translateY(-50%) rotate(0deg);
         -o-transform: translateY(-50%) rotate(0deg);
-}
+    }
     to {
         transform: translateY(-50%) rotate(360deg);
         -webkit-transform: translateY(-50%) rotate(360deg);
         -moz-transform: translateY(-50%) rotate(360deg);
         -ms-transform: translateY(-50%) rotate(360deg);
         -o-transform: translateY(-50%) rotate(360deg);
-}
+    }
 }
 
 .search-btn {
