@@ -131,7 +131,7 @@ const Header = () => {
                         {currentUser ? (
                             <Image
                                 className={cx('user-avatar')}
-                                src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/3b9b2c7cc984ad3c0afe5a6841197976~c5_100x100.jpeg?x-expires=1670472000&x-signature=xCSN9Q9p5MDlmbGagjJm%2FkSu6Wc%3D"
+                                src="https://thucphamtq.000webhostapp.com/upload/users/icon.jpg"
                                 alt="Avatar"
                             />
                         ) : (
